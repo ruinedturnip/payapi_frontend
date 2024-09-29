@@ -1,0 +1,46 @@
+@use "../abstracts/" as a;
+
+.partners {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  //   position: relative;
+  //   overflow-y: hidden;
+
+  &__textbox {
+    width: 44.5rem;
+    margin-top: 11.3rem;
+    margin-bottom: 10rem;
+  }
+
+  &__text {
+    margin-top: 2.4rem;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 1px solid a.$primary-white;
+    border-radius: 2.4rem;
+    width: 12.9rem;
+    height: 4.8rem;
+
+    margin-top: 3.2rem;
+  }
+
+  &__right {
+    margin-top: 11.3rem;
+    margin-bottom: 10rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 6rem;
+    row-gap: 3.9rem;
+  }
+
+  &__logo {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(19%) saturate(6742%)
+      hue-rotate(180deg) brightness(110%) contrast(99%);
+  }
+}

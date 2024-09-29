@@ -1,0 +1,29 @@
+@use "../abstracts/" as a;
+
+.attributes {
+  margin-top: 15rem;
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &--right {
+      flex-direction: row-reverse;
+      margin-left: 5rem;
+    }
+  }
+
+  //   &__img--left {
+  //     width: 44.5rem;
+  //   }
+  //   &__img--right {
+  //     width: 566px;
+  //   }
+  &__textbox {
+    width: 44.5rem;
+  }
+
+  &__text {
+    margin-top: 2.4rem;
+  }
+}

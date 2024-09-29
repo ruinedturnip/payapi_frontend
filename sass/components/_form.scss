@@ -1,0 +1,35 @@
+@use "../abstracts/" as a;
+
+.form {
+  position: relative;
+  width: 44.5rem;
+
+  &__input {
+    width: 100%;
+    height: 4.8rem;
+    border-radius: 2.4rem;
+    border: none;
+
+    padding-left: 2.8rem;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    right: 0;
+
+    cursor: pointer;
+    border: none;
+    background-color: a.$primary-pink;
+    border-radius: 2.4rem;
+    height: 4.8rem;
+    width: 173px;
+    transition: all 0.3s;
+  }
+  &:hover,
+  &:active {
+    background-color: a.$secondary-pink;
+  }
+}

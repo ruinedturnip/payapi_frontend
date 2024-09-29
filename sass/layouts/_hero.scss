@@ -1,0 +1,20 @@
+@use "../abstracts/" as a;
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__textbox {
+    width: 54.6rem;
+  }
+
+  &__heading {
+    margin-bottom: 6rem;
+  }
+
+  &__text {
+    margin-top: 1.6rem;
+    margin-left: 1.6rem;
+  }
+}
